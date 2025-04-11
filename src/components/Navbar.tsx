@@ -1,13 +1,7 @@
 import { useEffect } from "react";
+import { MenuProps } from "../types";
 
-type CallBack = (value: boolean) => boolean;
-
-type NavbarProps = {
-  menuOpen: boolean;
-  setMenuOpen: (value: CallBack) => void;
-};
-
-const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
+const Navbar = ({ menuOpen, setMenuOpen }: MenuProps) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   });
