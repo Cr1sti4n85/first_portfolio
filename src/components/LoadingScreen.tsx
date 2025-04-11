@@ -6,12 +6,12 @@ type LoadingScreenProps = {
 
 const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
   const [text, setText] = useState<string>("");
-  const fullText = "<Hola, bienvenidos a mi portafolio />";
+  const fullText: string = "<Hola, bienvenidos a mi portafolio />";
 
   useEffect(() => {
     let index = 0;
 
-    const interval = setInterval(() => {
+    const interval: number = setInterval(() => {
       setText(fullText.substring(0, index));
       index++;
 
