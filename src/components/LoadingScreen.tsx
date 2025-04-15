@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-
-type LoadingScreenProps = {
-  onComplete: () => void;
-};
+import { LoadingScreenProps } from "../types";
 
 const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
   const [text, setText] = useState<string>("");
