@@ -10,3 +10,8 @@ export type MenuProps = {
 export type LoadingScreenProps = {
   onComplete: () => void;
 };
+
+//smooth scrolling props
+export type ScrollProps = {
+  children: React.ReactNode;
+};

@@ -1,8 +1,5 @@
 import { FC, useEffect, useRef } from "react";
-
-interface ScrollProps {
-  children: React.ReactNode;
-}
+import { ScrollProps } from "../types";
 
 const RevealOnScroll: FC<ScrollProps> = ({ children }) => {
   const ref = useRef<HTMLDivElement>(null);
