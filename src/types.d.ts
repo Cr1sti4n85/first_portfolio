@@ -15,3 +15,10 @@ export type LoadingScreenProps = {
 export type ScrollProps = {
   children: React.ReactNode;
 };
+
+//Form content
+export type FormContent = {
+  name: string;
+  email: string;
+  message: string;
+};
